@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="../../asset/mobile/css/common.css">
     <link rel="stylesheet" href="../../asset/mobile/css/business.css">
     <link rel="stylesheet" href="../../asset/mobile/css/animate.min.css">
+    <script src="asset/pc/js/ua-parser.min.js"></script>
+    <script>
+        var uaParser = new UAParser(window.userAgent);
+        if ( uaParser.getDevice().type != "mobile" ) {
+            location.href = "/";
+        }
+    </script>
 </head>
 <body>
 <div class="home" >
