@@ -1,0 +1,46 @@
+.home {
+  width: 100%;
+}
+.home .allItems {
+  width: 60%;
+  padding: 200px 20% 60px 20%;
+  background: #1D1D1D;
+  position: relative;
+}
+.home .allItems .pic1 {
+  text-align: right;
+}
+.home .allItems .pic2 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+.home .allItems .pic3 {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+}
+.home .allItems .item {
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 20px;
+  z-index: 100;
+}
+.home .allItems .item .p1 {
+  color: #E4E4E4;
+  font-size: 18px;
+}
+.home .allItems .item .des {
+  color: #828282;
+  font-size: 14px;
+  margin-top: 5px;
+}
+@media screen and (max-width: 1440px) {
+  .home .allItems {
+    width: 70%;
+    padding: 200px 15% 60px 15%;
+  }
+}
+
+/*# sourceMappingURL=faqs.css.map */

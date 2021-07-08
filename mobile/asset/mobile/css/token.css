@@ -1,0 +1,136 @@
+.home {
+  width: 100%;
+}
+.home .main {
+  width: 100%;
+  position: relative;
+  background: black;
+  padding-top: 30px;
+}
+.home .main .one {
+  width: 90%;
+  margin: 0 auto;
+}
+.home .main .one .dom1 .t1 {
+  color: #D9D9D9;
+  font-size: 30px;
+      font-family: '04B_1';
+}
+.home .main .one .dom1 .pic {
+  margin: 20px 0;
+}
+.home .main .one .dom1 .pic img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.home .main .one .dom2 {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.home .main .one .dom2 .pic {
+  text-align: center;
+  margin: 30px 0;
+  text-align: left;
+}
+.home .main .one .dom2 .pic img {
+  max-width: 100%;
+  vertical-align: middle;
+  object-fit: contain;
+}
+.home .main .one .dom2 .nr {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0 40px 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home .main .one .dom2 .nr .l {
+  width: 65%;
+}
+.home .main .one .dom2 .nr .l .spic img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.home .main .one .dom2 .nr .l .text {
+  color: #D9D9D9;
+  font-size: 12px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+.home .main .one .dom2 .nr .l .text a {
+  color: white;
+  margin: 20px 0 10px 0;
+  display: inline-block;
+  font-family: "Arial-BoldMT";
+  position: relative;
+  padding-bottom: 3px;
+}
+.home .main .one .dom2 .nr .l .text a::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: white;
+}
+.home .main .one .dom2 .nr .r {
+  width: 33%;
+}
+.home .main .one .dom2 .nr .r img {
+  width: 100%;
+  object-fit: contain;
+}
+.home .main .one .dom2 .nr .html {
+  width: 100%;
+  color: #D9D9D9;
+  font-size: 12px;
+  line-height: 25px;
+}
+.home .main .four {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #121212;
+  padding: 40px 5%;
+}
+.home .main .four .item {
+  width: 100%;
+  border: 1px solid red;
+  border-image: linear-gradient(to right, #2C5CE3, #00A4A9) 20 20;
+  margin-bottom: 30px;
+  padding: 30px 0;
+}
+.home .main .four .item .pics {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .main .four .item .pics .pic2 img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  transform: scale(0.8);
+  transform-origin: 0 0;
+}
+.home .main .four .item .pics .pic img {
+  max-width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+}
+.home .main .four .item .des {
+  color: #676767;
+  font-size: 12px;
+  line-height: 25px;
+  width: 90%;
+  margin: 30px auto;
+}
+
+/*# sourceMappingURL=token.css.map */

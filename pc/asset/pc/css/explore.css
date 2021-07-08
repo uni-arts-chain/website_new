@@ -1,0 +1,73 @@
+.home {
+  width: 100%;
+}
+.home .nft {
+  width: 100%;
+  position: relative;
+}
+.home .nft .pic {
+  width: 100%;
+  display: block;
+}
+.home .nft .pic img {
+  height: 787px;
+  width:100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.home .nft .content {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+}
+.home .nft .content .t1 {
+  color: white;
+  font-size: 51px;
+  margin: 30px 0;
+  font-family: "Arial-BoldMT";
+}
+.home .nft .content .des {
+  color: white;
+  font-size: 24px;
+  margin-top: 30px;
+  line-height: 30px;
+}
+.home .nft .content .des p {
+  font-size: 18px;
+}
+.home .using {
+  width: 100%;
+  position: relative;
+  background: black url("../images/ex2.png") no-repeat;
+  background-size: cover;
+  height: 900px;
+  text-align: center;
+  padding: 80px 0;
+}
+.home .using .t1 {
+      color: white;
+    font-size: 30px;
+    font-family: "Arial-BoldMT";
+}
+.home .using .pic {
+  margin: 30px auto;
+  width: 80%;
+}
+.home .using .pic img {
+  max-width: 100%;
+  object-fit: contain;
+  vertical-align: middle;
+}
+@media screen and (max-width: 1440px) {
+  .home .nft .content {
+    width: 60%;
+    left: 10%;
+  }
+  .home .using {
+    height: 800px;
+  }
+}
+
+/*# sourceMappingURL=explore.css.map */

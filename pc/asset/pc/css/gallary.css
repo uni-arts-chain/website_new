@@ -1,0 +1,99 @@
+.home {
+  width: 100%;
+}
+.home .nft {
+  width: 100%;
+  position: relative;
+}
+.home .nft video {
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  height: 783px;
+  object-fit: cover;
+}
+.home .nft .content {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+}
+.home .nft .content .t1 {
+  color: white;
+  font-size: 51px;
+  margin: 30px 0;
+  font-family: "Arial-BoldMT";
+}
+.home .nft .content .t2 {
+  font-size: 25px;
+  color: white;
+  line-height: 30px;
+}
+.home .nft .content a {
+  background: #117EFF;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.23);
+  border-radius: 11px;
+  display: inline-block;
+  padding: 25px 50px;
+  color: white;
+  font-size: 24px;
+  margin-top: 30px;
+}
+.home .bit {
+  width: 100%;
+  position: relative;
+}
+.home .bit video {
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  height: 700px;
+  object-fit: cover;
+}
+.home .bit .pic{
+  width:100%;
+}
+.home .bit .pic img{
+  width:100%;
+  height: 624px;
+  object-fit: cover;
+  display: block;
+}
+.home .bit .content {
+  position: absolute;
+  left: 16%;
+  top: 20%;
+  width: 50%;
+}
+.home .bit .content .t1 {
+  color: white;
+  font-size: 51px;
+  margin: 30px 0;
+  font-family: "Arial-BoldMT";
+}
+.home .bit .content .t2 {
+  font-size: 25px;
+  color: white;
+  line-height: 30px;
+}
+.home .bit .content a {
+  background: #117EFF;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.23);
+  border-radius: 11px;
+  display: inline-block;
+  padding: 25px 50px;
+  color: white;
+  font-size: 24px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 1440px) {
+  .home .nft .content, .home .bit .content {
+    width: 60%;
+    left: 10%;
+  }
+}
+
+/*# sourceMappingURL=gallary.css.map */

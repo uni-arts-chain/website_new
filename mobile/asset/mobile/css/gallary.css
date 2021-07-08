@@ -1,0 +1,91 @@
+.home {
+  width: 100%;
+}
+.home .nft {
+  width: 100%;
+  position: relative;
+}
+.home .nft .pic {
+  width: 100%;
+}
+.home .nft .pic img {
+  width: 100%;
+  height: 340px;
+  display: block;
+  object-fit: cover;
+}
+.home .nft .content {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+}
+.home .nft .content .t1 {
+  color: white;
+  font-size: 22px;
+  margin: 15px 0;
+  font-family: "Arial-BoldMT";
+}
+.home .nft .content .t2 {
+  font-size: 18px;
+  color: white;
+  line-height: 25px;
+}
+.home .nft .content a {
+  margin-top: 20px;
+  display: block;
+}
+.home .nft .content a img {
+  width: 140px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+.home .bit {
+  width: 100%;
+  position: relative;
+  background: black;
+}
+.home .bit .pic {
+  width: 100%;
+}
+.home .bit .pic img {
+  width: 100%;
+  height: 340px;
+  display: block;
+  object-fit: cover;
+}
+.home .bit .content {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+}
+.home .bit .content .t1 {
+  color: white;
+  font-size: 22px;
+  margin: 15px 0;
+  font-family: "Arial-BoldMT";
+}
+.home .bit .content .t2 {
+  font-size: 18px;
+  color: white;
+  line-height: 25px;
+}
+.home .bit .content a {
+  display: block;
+  margin: 20px 0;
+}
+.home .bit .content a img {
+  width: 140px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+.home .bit .content .t3 {
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=gallary.css.map */
