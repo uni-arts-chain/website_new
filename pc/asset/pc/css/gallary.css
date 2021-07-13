@@ -64,8 +64,9 @@
 }
 .home .bit .content {
   position: absolute;
-  left: 16%;
-  top: 20%;
+  left: 20%;
+  top: 50%;
+  transform: translateY(-50%);
   width: 50%;
 }
 .home .bit .content .t1 {
