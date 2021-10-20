@@ -180,4 +180,9 @@
   vertical-align: middle;
 }
 
+.web3-logo {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=index.css.map */

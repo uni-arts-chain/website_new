@@ -4,23 +4,27 @@
 .home .nft {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .home .nft .pic {
   width: 100%;
   display: block;
+  position: absolute;
+  z-index: -1;
 }
 .home .nft .pic img {
-  height: 280px;
+  height: 471px;
   width: 100%;
   object-fit: cover;
   vertical-align: middle;
 }
 .home .nft .content {
-  position: absolute;
-  left: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 90%;
+  /* position: absolute; */
+  /* left: 5%; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  width: 100%;
+  padding: 0 15px;
 }
 .home .nft .content .t1 {
   color: white;

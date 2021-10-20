@@ -161,6 +161,10 @@
   object-fit: contain;
   vertical-align: middle;
 }
+.web3-logo {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 1440px) {
   .home .what .content, .home .how .content {
     width: 60%;
