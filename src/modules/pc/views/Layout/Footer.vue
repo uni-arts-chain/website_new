@@ -1,12 +1,12 @@
 /** * Created by Lay Hunt on 2021-10-28 16:01:47. */
 <template>
-  <el-affix> nav </el-affix>
+  <footer></footer>
 </template>
 
 <script>
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "navbar",
+  name: "footerbar",
   setup() {
     // TODO
 

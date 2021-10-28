@@ -1,0 +1,58 @@
+// @font-face {
+//   font-family: "Montserrat";
+//   src: url("~@/assets/fonts/Montserrat.ttf");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+* {
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "segoe ui",
+    "sans-serif";
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  // height: 100%;
+}
+
+.container {
+  width: 1231px;
+  margin: 0 auto;
+}
+
+body #nprogress .bar {
+  background: #303133;
+}
+
+body #nprogress .peg {
+  box-shadow: 0 0 10px #303133, 0 0 5px #303133;
+}
+
+.webkit-ellipsis-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
