@@ -75,7 +75,7 @@
       <div class="container">
         <div
           class="slide-wrapper"
-          :style="`width: ${keyframeList.length * 148}px`"
+          :style="`width: ${slideWrapper.children.length * 148}px`"
           ref="slideWrapper"
         >
           <div class="swiper-slide">
@@ -131,11 +131,12 @@ export default defineComponent({
     onMounted(() => {
       let length = slideWrapper.value.children.length;
       for (let i = 0; i <= length; i++) {
-        keyframeList.value = {
+        keyframeList.value.push({
           translateX: (i + 1) * -148,
           duration: 1000,
           delay: 3000,
-        };
+        });
+        slideWrapper.value.appendChild(slideWrapper.value.children[i].cloneNode(true));
       }
       anime({
         targets: ".slide-wrapper",
