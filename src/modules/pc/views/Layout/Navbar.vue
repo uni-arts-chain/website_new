@@ -9,8 +9,8 @@
             <li>
               <router-link to="/"><img src="@/modules/pc/assets/images/uniarts.png" /></router-link>
             </li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Explorer</a></li>
+            <li><router-link to="/gallery">Gallery</router-link></li>
+            <li><router-link to="/explorer">Explorer</router-link></li>
             <li><a href="">For Business</a></li>
             <li><a href="">Token Economy</a></li>
             <li><a href="">Blog</a></li>

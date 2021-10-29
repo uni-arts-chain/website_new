@@ -18,11 +18,23 @@ module.exports = {
       options[0].title = process.env.VUE_APP_NAME;
       return options;
     });
-    config.module.rule("svg").exclude.add(resolve("src/assets/icons")).end();
+    config.module.rule("svg").exclude.add(resolve("src/modules/pc/assets/icons")).end();
     config.module
       .rule("svgSpriteLoader")
       .test(/\.svg$/)
-      .include.add(resolve("src/assets/icons"))
+      .include.add(resolve("src/modules/pc/assets/icons"))
+      .end()
+      .use("svg-sprite-loader")
+      .loader("svg-sprite-loader")
+      .options({
+        symbolId: "icon-[name]",
+      })
+      .end();
+    config.module.rule("svg").exclude.add(resolve("src/modules/mobile/assets/icons")).end();
+    config.module
+      .rule("svgSpriteLoader")
+      .test(/\.svg$/)
+      .include.add(resolve("src/modules/mobile/assets/icons"))
       .end()
       .use("svg-sprite-loader")
       .loader("svg-sprite-loader")

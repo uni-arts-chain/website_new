@@ -1,4 +1,4 @@
-import Icon from "@/plugins/icon";
+import Icon from "@/modules/mobile/plugins/icon";
 
 export default {
   install: async (vue) => {
