@@ -16,5 +16,11 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "explorer" */ "@/modules/pc/views/Explorer/Index.vue"),
   },
+  {
+    path: "/business",
+    name: "Business",
+    component: () =>
+      import(/* webpackChunkName: "business" */ "@/modules/pc/views/Business/Index.vue"),
+  },
 ];
 export default routes;

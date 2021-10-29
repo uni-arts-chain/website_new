@@ -11,7 +11,7 @@
             </li>
             <li><router-link to="/gallery">Gallery</router-link></li>
             <li><router-link to="/explorer">Explorer</router-link></li>
-            <li><a href="">For Business</a></li>
+            <li><router-link to="/business">For Business</router-link></li>
             <li><a href="">Token Economy</a></li>
             <li><a href="">Blog</a></li>
             <li><a href="">FAQs</a></li>
