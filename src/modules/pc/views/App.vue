@@ -1,6 +1,8 @@
 <template>
   <Navbar />
-  <router-view />
+  <main>
+    <router-view />
+  </main>
   <Footer />
 </template>
 
@@ -23,11 +25,12 @@ export default defineComponent({
 @import "@/modules/pc/assets/styles/reset.scss";
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+main {
+  flex: 1 0 auto;
 }
 </style>

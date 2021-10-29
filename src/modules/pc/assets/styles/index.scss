@@ -1,9 +1,19 @@
-// @font-face {
-//   font-family: "Montserrat";
-//   src: url("~@/assets/fonts/Montserrat.ttf");
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: "ArialMT";
+  src: url("~@/assets/fonts/ArialMT.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arial-BoldMT";
+  src: url("~@/assets/fonts/Arial-BoldMT.otf");
+}
+
+@font-face {
+  font-family: "04B_1";
+  src: url("~@/assets/fonts/04B_1.TTF");
+}
 
 * {
   color: inherit;
@@ -12,8 +22,7 @@
   border: none;
   outline: none;
   list-style: none;
-  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "segoe ui",
-    "sans-serif";
+  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "segoe ui", "sans-serif";
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -24,12 +33,16 @@ input::-webkit-inner-spin-button {
 }
 
 html,
-body {
-  // height: 100%;
+body,
+li,
+ul,
+a,
+p {
+  font-family: 'ArialMT';
 }
 
 .container {
-  width: 1231px;
+  width: 1050px;
   margin: 0 auto;
 }
 
