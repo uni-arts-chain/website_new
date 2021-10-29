@@ -22,5 +22,15 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "business" */ "@/modules/pc/views/Business/Index.vue"),
   },
+  {
+    path: "/token",
+    name: "Token",
+    component: () => import(/* webpackChunkName: "token" */ "@/modules/pc/views/Token/Index.vue"),
+  },
+  {
+    path: "/faqs",
+    name: "FAQs",
+    component: () => import(/* webpackChunkName: "faqs" */ "@/modules/pc/views/FAQs/Index.vue"),
+  },
 ];
 export default routes;
