@@ -7,7 +7,7 @@
           <img class="logo" src="@/modules/pc/assets/images/logo.png" />
           <div class="menu">
             <li>
-              <a href=""><img src="@/modules/pc/assets/images/uniarts.png" /></a>
+              <router-link to="/"><img src="@/modules/pc/assets/images/uniarts.png" /></router-link>
             </li>
             <li><a href="">Gallery</a></li>
             <li><a href="">Explorer</a></li>

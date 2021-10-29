@@ -75,7 +75,7 @@
       <div class="container">
         <div
           class="slide-wrapper"
-          :style="`width: ${slideWrapper.children.length * 148}px`"
+          :style="`width: ${keyframeList.length * 2 * 148}px`"
           ref="slideWrapper"
         >
           <div class="swiper-slide">
