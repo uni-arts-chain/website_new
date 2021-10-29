@@ -58,6 +58,7 @@ footer {
   background: black;
 }
 .container {
+  width: 1050px;
   display: flex;
   justify-content: space-between;
   padding: 80px 0;
