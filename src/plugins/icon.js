@@ -1,7 +1,11 @@
 import IconSvg from "@/components/IconSvg";
 
+const resolve = (dir) => {
+  return path.join(__dirname, dir);
+};
+const path = require("path");
 const requireAll = (requireContext) => requireContext.keys().map(requireContext);
-const req = require.context("@/assets/icons", false, /\.svg$/);
+const req = require.context(resolve("../assets/icons"), false, /\.svg$/);
 requireAll(req);
 
 export default {
