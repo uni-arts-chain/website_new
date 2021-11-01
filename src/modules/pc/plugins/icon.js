@@ -1,7 +1,7 @@
 import IconSvg from "@/modules/pc/components/IconSvg";
 
 const requireAll = (requireContext) => requireContext.keys().map(requireContext);
-const req = require.context("../assets/icons", false, /\.svg$/);
+const req = require.context("@/modules/mobile/assets/icons", false, /\.svg$/);
 requireAll(req);
 
 export default {
