@@ -222,6 +222,7 @@ export default defineComponent({
         color: #a3a3a3;
         font-size: 24px;
         margin-top: 40px;
+        font-family: "04B_1";
       }
       span {
         color: #a3a3a3;
