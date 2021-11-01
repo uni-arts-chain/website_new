@@ -2,26 +2,24 @@
 <template>
   <el-affix class="navbar">
     <nav class="container">
+      <div class="menu-content">
+        <div class="left-img">
+          <img src="@/modules/mobile/assets/images/logo.png" />
+        </div>
+        <router-link to="/" @click="goHome" class="center-img">
+          <img src="@/modules/mobile/assets/images/logo-text.png" />
+        </router-link>
+        <div class="right-img" @click="onSelect">
+          <img src="@/modules/mobile/assets/images/nav.png" />
+        </div>
+      </div>
       <el-menu ref="elMenu" class="el-menu-vertical">
-        <el-sub-menu>
-          <template #title>
-            <div class="menu-content">
-              <div class="left-img">
-                <img src="@/modules/mobile/assets/images/logo.png" />
-              </div>
-              <div class="center-img">
-                <img src="@/modules/mobile/assets/images/logo-text.png" />
-              </div>
-              <div class="right-img">
-                <img src="@/modules/mobile/assets/images/nav.png" />
-              </div>
-            </div>
-          </template>
+        <el-sub-menu :popper-append-to-body="true">
           <div class="nav-body">
             <ul>
-              <li><router-link to="/" @click="onSelect">Gallery</router-link></li>
-              <li><router-link to="/" @click="onSelect">Explorer</router-link></li>
-              <li><router-link to="/" @click="onSelect">For Business</router-link></li>
+              <li><router-link to="/gallery" @click="onSelect">Gallery</router-link></li>
+              <li><router-link to="/explorer" @click="onSelect">Explorer</router-link></li>
+              <li><router-link to="/business" @click="onSelect">For Business</router-link></li>
               <li><router-link to="/" @click="onSelect">Token Economy</router-link></li>
               <li><router-link to="/" @click="onSelect">Blog</router-link></li>
               <li><router-link to="/" @click="onSelect">FAQs</router-link></li>
@@ -41,12 +39,19 @@ export default defineComponent({
     // TODO
 
     const elMenu = ref(null);
+    const isOpen = ref(false);
     const onSelect = () => {
+      isOpen.value = !isOpen.value;
+      isOpen.value ? elMenu.value.open() : elMenu.value.close();
+    };
+
+    const goHome = () => {
       elMenu.value.close();
     };
     return {
       elMenu,
       onSelect,
+      goHome,
     };
   },
 });
@@ -75,8 +80,8 @@ nav {
     .el-sub-menu__title {
       cursor: pointer;
       color: white;
-      line-height: 38px;
-      height: 38px;
+      line-height: 0px;
+      height: 0px;
       padding: 0 !important;
     }
     .el-sub-menu__icon-arrow {
@@ -108,6 +113,7 @@ nav {
     }
   }
   .center-img {
+    display: block;
     width: 80px;
     img {
       width: 100%;
@@ -123,7 +129,7 @@ nav {
 }
 .nav-body {
   display: block;
-  height: calc(100vh - 68px);
+  height: calc(100vh - 53px);
   width: 100%;
   display: flex;
   align-items: center;
