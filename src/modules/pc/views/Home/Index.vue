@@ -130,7 +130,7 @@ export default defineComponent({
     const keyframeList = ref([]);
     onMounted(() => {
       let length = slideWrapper.value.children.length;
-      for (let i = 0; i <= length; i++) {
+      for (let i = 0; i < length; i++) {
         keyframeList.value.push({
           translateX: (i + 1) * -148,
           duration: 1000,

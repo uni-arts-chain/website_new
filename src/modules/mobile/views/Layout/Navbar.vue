@@ -2,8 +2,8 @@
 <template>
   <el-affix class="navbar">
     <nav class="container">
-      <el-menu default-active="2" class="el-menu-vertical" @open="handleOpen" @close="handleClose">
-        <el-sub-menu index="1">
+      <el-menu ref="elMenu" class="el-menu-vertical">
+        <el-sub-menu>
           <template #title>
             <div class="menu-content">
               <div class="left-img">
@@ -17,10 +17,16 @@
               </div>
             </div>
           </template>
-          <el-menu-item-group>
-            <el-menu-item index="1-1">item one</el-menu-item>
-            <el-menu-item index="1-2">item one</el-menu-item>
-          </el-menu-item-group>
+          <div class="nav-body">
+            <ul>
+              <li><router-link to="/" @click="onSelect">Gallery</router-link></li>
+              <li><router-link to="/" @click="onSelect">Explorer</router-link></li>
+              <li><router-link to="/" @click="onSelect">For Business</router-link></li>
+              <li><router-link to="/" @click="onSelect">Token Economy</router-link></li>
+              <li><router-link to="/" @click="onSelect">Blog</router-link></li>
+              <li><router-link to="/" @click="onSelect">FAQs</router-link></li>
+            </ul>
+          </div>
         </el-sub-menu>
       </el-menu>
     </nav>
@@ -28,22 +34,35 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 export default defineComponent({
   name: "navbar",
   setup() {
     // TODO
 
-    return {};
+    const elMenu = ref(null);
+    const onSelect = () => {
+      elMenu.value.close();
+    };
+    return {
+      elMenu,
+      onSelect,
+    };
   },
 });
 </script>
 
 <style lang="scss" scoped>
+.navbar {
+  height: 68px;
+  background-color: black;
+}
 nav {
+  position: fixed;
   background: rgba(0, 0, 0, 0.85);
   padding-top: 15px;
   padding-bottom: 15px;
+  z-index: 100;
 }
 .el-menu-vertical {
   border: none;
@@ -99,6 +118,24 @@ nav {
     text-align: right;
     img {
       width: 22px;
+    }
+  }
+}
+.nav-body {
+  display: block;
+  height: calc(100vh - 68px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  ul {
+    display: block;
+    width: 100%;
+  }
+  li {
+    margin-bottom: 20px;
+    text-align: center;
+    a {
+      color: white;
     }
   }
 }
