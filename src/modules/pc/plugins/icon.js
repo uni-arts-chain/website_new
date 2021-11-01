@@ -1,12 +1,12 @@
 import IconSvg from "@/modules/pc/components/IconSvg";
+// import path from "path";
 
-const resolve = (dir) => {
-  return path.join(__dirname, dir);
-};
-const path = require("path");
-const requireAll = (requireContext) => requireContext.keys().map(requireContext);
-const req = require.context(resolve("../assets/icons"), false, /\.svg$/);
-requireAll(req);
+// const resolve = (dir) => {
+//   return path.join(__dirname, dir);
+// };
+// const requireAll = (requireContext) => requireContext.keys().map(requireContext);
+// const req = require.context(resolve("../assets/icons"), false, /\.svg$/);
+// requireAll(req);
 
 export default {
   install: (vue) => {
