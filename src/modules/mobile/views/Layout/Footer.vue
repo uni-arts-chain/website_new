@@ -13,22 +13,28 @@
       </div>
       <div class="right">
         <span class="join">Join the Communities</span>
-        <a href="https://twitter.com/UniartsNetwork" target="_blank" class="medium">
-          <img src="@/modules/pc/assets/images/f1.png" />
-          <span>Twitter</span>
-        </a>
-        <a href="https://github.com/uni-arts-chain" target="_blank" class="medium">
-          <img src="@/modules/pc/assets/images/f2.png" />
-          <span>Github</span>
-        </a>
-        <a href="https://t.me/uniarts" target="_blank" class="medium">
-          <img src="@/modules/pc/assets/images/f3.png" />
-          <span>Telegram</span>
-        </a>
-        <a href="https://uniartsnetwork.medium.com" target="_blank" class="medium">
-          <img src="@/modules/pc/assets/images/f4.png" />
-          <span>Medium</span>
-        </a>
+        <div class="icon-group">
+          <a href="https://twitter.com/UniartsNetwork" target="_blank" class="medium">
+            <img src="@/modules/pc/assets/images/f1.png" />
+            <span>Twitter</span>
+          </a>
+          <a href="https://github.com/uni-arts-chain" target="_blank" class="medium">
+            <img src="@/modules/pc/assets/images/f2.png" />
+            <span>Github</span>
+          </a>
+          <a href="https://t.me/uniarts" target="_blank" class="medium">
+            <img src="@/modules/pc/assets/images/f3.png" />
+            <span>Telegram</span>
+          </a>
+          <a href="https://uniartsnetwork.medium.com" target="_blank" class="medium">
+            <img src="@/modules/pc/assets/images/f4.png" />
+            <span>Medium</span>
+          </a>
+          <a href="https://discord.com/invite/ujZeGvX" target="_blank" class="medium">
+            <img style="height: 14px; margin-left: 3px" src="@/modules/pc/assets/images/f5.png" />
+            <span style="margin-left: 23px">Discord</span>
+          </a>
+        </div>
         <div class="information">Get latest Information</div>
         <span class="information-desc">
           Join our mailing list to receive latest updates, new release, air drops, and tips and
@@ -85,6 +91,10 @@ footer {
     color: #ffffff;
     font-size: 17px;
     text-transform: capitalize;
+  }
+  .icon-group {
+    display: flex;
+    flex-direction: column;
   }
   .medium {
     width: 100%;

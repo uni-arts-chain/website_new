@@ -4,7 +4,21 @@
     <div class="container">
       <div class="session">
         <div class="title">Native token of UniArts Network: UART</div>
-        <img class="native-token" src="@/modules/mobile/assets/images/token-native.png" />
+        <div class="native-token">
+          <div class="native-token-text">UART is the native token of UniArts Network</div>
+          <div class="native-token-text">
+            <span>Total Hard Cap</span>
+            <span style="width: 60px; color: #d2d2d2">100M</span>
+          </div>
+          <div class="native-token-text">
+            <span>Initial Circulating Supply</span>
+            <span style="width: 60px; color: #d2d2d2">4.1M</span>
+          </div>
+          <div class="native-token-text">
+            <span>Team lockup</span>
+            <span style="width: 60px; color: #d2d2d2">3 Years</span>
+          </div>
+        </div>
       </div>
       <div class="session driven">
         <div class="title">NFT driven NPOS</div>
@@ -127,8 +141,19 @@ export default defineComponent({
     font-family: "04B_1";
   }
   .native-token {
-    margin: 20px 0;
+    margin: 40px 0;
     width: 100%;
+    height: 143px;
+    background: url(~@/modules/pc/assets/images/native-token.png) no-repeat;
+    background-size: 100% 143px;
+    padding: 40px 10px 10px 20px;
+  }
+  .native-token-text {
+    color: #aaa;
+    font-size: 12px;
+    margin: 4px 0;
+    display: flex;
+    justify-content: space-between;
   }
 }
 .driven {

@@ -14,17 +14,17 @@
       <div class="info-body container">
         <div class="title">What Is UniArts</div>
         <p class="desc">
-          UniArts is a decentralized incubation system for artists and art collectors.
+          UniArts is a decentralized value discovery system for artists and art collectors
         </p>
         <p class="text">
-          UniArts is a blockchain network developed with Substrate which provides NFT
-          infrastructure, community voting incentives, DAO curation, and art grants, with an end
-          goal of the democratization of art.
+          UniArts is a multi-chain bottom-up value discovery system with a substrate-developed
+          mainnet and EVM (Ethereum virtual machine)-based smart contracts for infrastructure.
         </p>
-        <span @click="onShowClickText">more</span>
+        <span @click="onShowClickText">More</span>
         <p class="hide-text" :class="{ isShow: isShowText }">
-          UniArts builds a decentralized NFT gallery to not only feature established artists, but
-          also to serve as a platform to exhibit and promote artwork that is loved by the community.
+          It also provides crowd- voting/DAO curation for art, distributes incentives for
+          contributing content creators and art appreciators, as well as art grants to help better
+          achieve the democratization of art and fair value discovery of NFTs.
         </p>
       </div>
     </div>
@@ -36,7 +36,7 @@
           Undervalued artists full of talent should be showcased to incentivized connoisseurs. It’s
           a mutually beneficial relationship.
         </p>
-        <span @click="onWhyClickText">more</span>
+        <span @click="onWhyClickText">More</span>
         <p class="hide-text" style="font-style: italic" :class="{ isShow: isWhyText }">
           “Art should be democratically available to as many people as possible.” “The
           Democratization of art is about enhancing the quality of life for a wider section of the
@@ -63,7 +63,7 @@
           extra grants and support.
           <br />
         </p>
-        <span @click="onWorkClickText">more</span>
+        <span @click="onWorkClickText">More</span>
         <p class="hide-text" :class="{ isShow: isWorkText }">
           Powered by Substrate, UniArts’ NPoS mint portion of the block helps reward NFTs that bind
           with validators by their creators. NFT owners may choose to pin the NFT on their address
