@@ -73,11 +73,7 @@
     </div>
     <div class="partner">
       <div class="container">
-        <div
-          class="slide-wrapper"
-          :style="`width: ${keyframeList.length * 2 * 148}px`"
-          ref="slideWrapper"
-        >
+        <div class="slide-wrapper" ref="slideWrapper">
           <div class="swiper-slide">
             <img src="@/modules/pc/assets/images/partner/av.png" />
           </div>
@@ -85,19 +81,7 @@
             <img src="@/modules/pc/assets/images/partner/infinity.png" />
           </div>
           <div class="swiper-slide">
-            <img src="@/modules/pc/assets/images/partner/capital.png" />
-          </div>
-          <div class="swiper-slide">
-            <img src="@/modules/pc/assets/images/partner/sssnodes.png" />
-          </div>
-          <div class="swiper-slide">
-            <img src="@/modules/pc/assets/images/partner/7.png" />
-          </div>
-          <div class="swiper-slide">
             <img src="@/modules/pc/assets/images/partner/paka.png" />
-          </div>
-          <div class="swiper-slide">
-            <img src="@/modules/pc/assets/images/partner/t.png" />
           </div>
         </div>
       </div>
@@ -107,7 +91,6 @@
 
 <script>
 import { defineComponent, ref, onMounted } from "vue";
-import anime from "animejs/lib/anime.es.js";
 
 export default defineComponent({
   name: "index",
@@ -128,23 +111,7 @@ export default defineComponent({
 
     const slideWrapper = ref(null);
     const keyframeList = ref([]);
-    onMounted(() => {
-      let length = slideWrapper.value.children.length;
-      for (let i = 0; i < length; i++) {
-        keyframeList.value.push({
-          translateX: (i + 1) * -148,
-          duration: 1000,
-          delay: 3000,
-        });
-        slideWrapper.value.appendChild(slideWrapper.value.children[i].cloneNode(true));
-      }
-      anime({
-        targets: ".slide-wrapper",
-        keyframes: keyframeList.value,
-        easing: "easeInOutSine",
-        loop: true,
-      });
-    });
+    onMounted(() => {});
 
     return {
       onShowClickText,
@@ -245,22 +212,24 @@ export default defineComponent({
   background: #333333;
   padding: 30px 0;
   .container {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 888px;
   }
   .slide-wrapper {
-    overflow: hidden;
-    height: 60px;
+    /* overflow: hidden; */
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
   }
   .swiper-slide {
-    float: left;
+    /* float: left; */
     width: 128px;
-    height: 60px;
+    height: 65px;
     margin: 0 10px;
     text-align: center;
     > img {
-      max-width: 80%;
-      height: 60px;
+      /* max-width: 80%; */
+      height: 65px;
       object-fit: contain;
       vertical-align: middle;
     }

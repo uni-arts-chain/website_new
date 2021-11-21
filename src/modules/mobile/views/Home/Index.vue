@@ -73,11 +73,7 @@
     </div>
     <div class="partner">
       <div class="container">
-        <div
-          class="slide-wrapper"
-          :style="`width: ${keyframeList.length * 2 * 120}px`"
-          ref="slideWrapper"
-        >
+        <div class="slide-wrapper" ref="slideWrapper">
           <div class="swiper-slide">
             <img src="@/modules/pc/assets/images/partner/av.png" />
           </div>
@@ -85,19 +81,7 @@
             <img src="@/modules/pc/assets/images/partner/infinity.png" />
           </div>
           <div class="swiper-slide">
-            <img src="@/modules/pc/assets/images/partner/capital.png" />
-          </div>
-          <div class="swiper-slide">
-            <img src="@/modules/pc/assets/images/partner/sssnodes.png" />
-          </div>
-          <div class="swiper-slide">
-            <img src="@/modules/pc/assets/images/partner/7.png" />
-          </div>
-          <div class="swiper-slide">
             <img src="@/modules/pc/assets/images/partner/paka.png" />
-          </div>
-          <div class="swiper-slide">
-            <img src="@/modules/pc/assets/images/partner/t.png" />
           </div>
         </div>
       </div>
@@ -107,7 +91,6 @@
 
 <script>
 import { defineComponent, ref, onMounted } from "vue";
-import anime from "animejs/lib/anime.es.js";
 
 export default defineComponent({
   name: "index",
@@ -129,21 +112,21 @@ export default defineComponent({
     const slideWrapper = ref(null);
     const keyframeList = ref([]);
     onMounted(() => {
-      let length = slideWrapper.value.children.length;
-      for (let i = 0; i < length; i++) {
-        keyframeList.value.push({
-          translateX: (i + 1) * -120,
-          duration: 1000,
-          delay: 3000,
-        });
-        slideWrapper.value.appendChild(slideWrapper.value.children[i].cloneNode(true));
-      }
-      anime({
-        targets: ".slide-wrapper",
-        keyframes: keyframeList.value,
-        easing: "easeInOutSine",
-        loop: true,
-      });
+      // let length = slideWrapper.value.children.length;
+      // for (let i = 0; i < length; i++) {
+      //   keyframeList.value.push({
+      //     translateX: (i + 1) * -120,
+      //     duration: 1000,
+      //     delay: 3000,
+      //   });
+      //   slideWrapper.value.appendChild(slideWrapper.value.children[i].cloneNode(true));
+      // }
+      // anime({
+      //   targets: ".slide-wrapper",
+      //   keyframes: keyframeList.value,
+      //   easing: "easeInOutSine",
+      //   loop: true,
+      // });
     });
 
     return {
