@@ -71,7 +71,7 @@
         </p>
       </div>
     </div>
-    <div class="partner">
+    <!-- <div class="partner">
       <div class="container">
         <div class="slide-wrapper" ref="slideWrapper">
           <div class="swiper-slide">
@@ -85,7 +85,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
