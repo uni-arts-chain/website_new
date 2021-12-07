@@ -19,7 +19,7 @@
             <ul>
               <li><router-link to="/gallery" @click="onSelect">Gallery</router-link></li>
               <li><router-link to="/explorer" @click="onSelect">Explorer</router-link></li>
-              <li><router-link to="/business" @click="onSelect">For Business</router-link></li>
+              <li><router-link to="/game" @click="onSelect">Game</router-link></li>
               <li><router-link to="/token" @click="onSelect">Token Economy</router-link></li>
               <li><a href="https://uniartsnetwork.medium.com/" target="_blank">Blog</a></li>
               <li><router-link to="/faqs" @click="onSelect">FAQs</router-link></li>

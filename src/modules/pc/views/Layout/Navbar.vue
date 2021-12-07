@@ -11,7 +11,7 @@
             </li>
             <li><router-link to="/gallery">Gallery</router-link></li>
             <li><router-link to="/explorer">Explorer</router-link></li>
-            <li><router-link to="/business">For Business</router-link></li>
+            <li><router-link to="/game">Game</router-link></li>
             <li><router-link to="/token">Token Economy</router-link></li>
             <li><a href="https://uniartsnetwork.medium.com/" target="_blank">Blog</a></li>
             <li><router-link to="/faqs">FAQs</router-link></li>

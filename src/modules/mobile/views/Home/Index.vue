@@ -2,7 +2,13 @@
 <template>
   <div class="index">
     <div class="banner">
-      <div class="item"></div>
+      <div class="item">
+        <div class="info-body container">
+          <div>UniArts'ART-Fi</div>
+          <br />
+          <div>Fine Arts with Social, Game and Benefit</div>
+        </div>
+      </div>
     </div>
     <div class="session">
       <video
@@ -12,7 +18,7 @@
         src="https://assets-jl.oss-cn-beijing.aliyuncs.com/videos/60e3c524c8e1b.mp4"
       ></video>
       <div class="info-body container">
-        <div class="title">What Is UniArts</div>
+        <div class="title">What Is UniArts:</div>
         <p class="desc">
           UniArts is a decentralized value discovery system for artists and art collectors
         </p>
@@ -20,29 +26,76 @@
           UniArts is a multi-chain bottom-up value discovery system with a substrate-developed
           mainnet and EVM (Ethereum virtual machine)-based smart contracts for infrastructure.
         </p>
-        <span @click="onShowClickText">More</span>
-        <p class="hide-text" :class="{ isShow: isShowText }">
-          It also provides crowd- voting/DAO curation for art, distributes incentives for
-          contributing content creators and art appreciators, as well as art grants to help better
-          achieve the democratization of art and fair value discovery of NFTs.
-        </p>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          data-aos-offset="70"
+          class="hide-text"
+        >
+          <div class="row">
+            <span>- Exhibition:</span>
+            <span>List NFTs to let the community to vote with UART and earn rewards;</span>
+          </div>
+          <div class="row">
+            <span>- Value discovery:</span>
+            <span
+              >UARTs mint into NFTs with votes received as value indicator, also retrievable by the
+              owner;</span
+            >
+          </div>
+          <div class="row">
+            <span>- IXO:</span>
+            <span>NFT Auction after vote with liquidity enhance;</span>
+          </div>
+          <div class="row">
+            <span></span>
+            <span
+              >NFT projects or other collector community may do IXO for their in demand NFTs</span
+            >
+          </div>
+          <div class="row">
+            <span></span>
+            <span>NFT collectable Mysterious box backed by LPs </span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="session">
       <div class="info-body container">
         <div class="title">Why UniArts</div>
-        <p class="desc">UniArts was created to unite artists and collectors.</p>
+        <p class="desc">
+          To bond & connect artwork NFTs with the community instead of seller-buyer 2 point
+          interaction
+        </p>
+        <p class="text">UniArts’ ART-FI makes Fine Art the central of Social and Game</p>
         <p class="text">
-          Undervalued artists full of talent should be showcased to incentivized connoisseurs. It’s
-          a mutually beneficial relationship.
+          UniArts’ bottom-up value discovery system allow the community to share the value of great
+          artworks.
         </p>
-        <span @click="onWhyClickText">More</span>
-        <p class="hide-text" style="font-style: italic" :class="{ isShow: isWhyText }">
-          “Art should be democratically available to as many people as possible.” “The
-          Democratization of art is about enhancing the quality of life for a wider section of the
-          community through the promotion, appreciation, and understanding of artworks. It is about
-          bringing new members into the community, those that previously may not have accessed.”
-        </p>
+        <div
+          class="hide-text"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          data-aos-offset="70"
+        >
+          <div class="row">
+            <span
+              >- NFT Gaming: NFT sold in the Galley can be used as cards in the game
+              "ART-VERSUS"</span
+            >
+          </div>
+          <div class="row">
+            <span>- Collect NFT souvenirs for every vote round</span>
+          </div>
+          <div class="row">
+            <span>- Good commons forwarded to community</span>
+          </div>
+          <div class="row">
+            <span>- NFT collector certificate </span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="session">
@@ -54,21 +107,47 @@
       ></video>
       <div class="info-body container">
         <div class="title">How Does it Work</div>
-        <p class="desc">NPoS driven by NFT Creation and Appreciation</p>
-        <p class="text">
-          ※ For creators: Create NFTs with your work and bind with curators (validator) nodes.<br />
-          ※ For community appreciation: staking UARTs and voting for preferred NFTs.<br /><br />
-
-          Both will be rewarded by UniArts’ token economy, with the most popular works will receive
-          extra grants and support.
-          <br />
-        </p>
-        <span @click="onWorkClickText">More</span>
-        <p class="hide-text" :class="{ isShow: isWorkText }">
-          Powered by Substrate, UniArts’ NPoS mint portion of the block helps reward NFTs that bind
-          with validators by their creators. NFT owners may choose to pin the NFT on their address
-          to receive UARTs. Nominators vote for NFTs instead of nodes to gain staking rewards.
-        </p>
+        <p class="desc">“Appreciate to Earn” NFT vote mining and curatorial position bidn</p>
+        <div
+          class="text"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          data-aos-offset="70"
+        >
+          <div class="row">
+            <span>- Vote mining:</span>
+            <span>Voting by staking UARTs for NFTs and earn rewards;</span>
+          </div>
+          <div class="row">
+            <span>- NFTs with FTs:</span>
+            <span>Extra UARTs mint into NFTs with votes received, retrievable by the owner;</span>
+          </div>
+          <div class="row">
+            <span>- Curatorial Position:</span>
+            <span>Stake UART to list your NFTs to be voted;</span>
+          </div>
+        </div>
+        <div
+          class="hide-text"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          data-aos-offset="70"
+        >
+          <div class="row">
+            <span>UniArts' community token UINK：</span>
+          </div>
+          <div class="row">
+            <span>- Rewarded via participate in community activities</span>
+          </div>
+          <div class="row">
+            <span>- Play NFT card game to earn</span>
+          </div>
+          <div class="row">
+            <span>- Purchase rare Exclusive NFTs</span>
+          </div>
+        </div>
       </div>
     </div>
     <!-- <div class="partner">
@@ -150,10 +229,23 @@ export default defineComponent({
     background-color: black;
     width: 100%;
     height: 256px;
-    background-image: url(~@/modules/mobile/assets/images/banner.png);
+    background-image: url(~@/modules/mobile/assets/images/banner.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
+    background-size: auto 100%;
+    > .info-body {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      > div {
+        font-family: "04B_1";
+        color: white;
+        font-size: 23px;
+      }
+    }
   }
 }
 
@@ -211,6 +303,7 @@ export default defineComponent({
       background: white;
     }
     .hide-text {
+      margin-top: 30px;
       color: white;
       font-size: 13px;
       line-height: 25px;

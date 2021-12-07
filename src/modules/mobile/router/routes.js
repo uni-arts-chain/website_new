@@ -17,8 +17,8 @@ const routes = [
       import(/* webpackChunkName: "explorer" */ "@/modules/mobile/views/Explorer/Index.vue"),
   },
   {
-    path: "/business",
-    name: "Business",
+    path: "/game",
+    name: "Game",
     component: () =>
       import(/* webpackChunkName: "business" */ "@/modules/mobile/views/Business/Index.vue"),
   },
