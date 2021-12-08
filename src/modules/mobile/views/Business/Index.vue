@@ -43,13 +43,13 @@ export default defineComponent({
   .title {
     font-family: "ArialMT";
     color: white;
-    font-size: 23px;
+    font-size: 19px;
   }
   .desc {
     margin-top: 30px;
     color: white;
     font-family: "ArialMT";
-    font-size: 18px;
+    font-size: 14px;
     line-height: 35px;
   }
 }
