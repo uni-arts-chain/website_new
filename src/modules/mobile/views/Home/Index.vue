@@ -235,10 +235,6 @@ export default defineComponent({
     background-color: black;
     width: 100%;
     height: 256px;
-    background-image: url("https://bitflix.oss-cn-hongkong.aliyuncs.com/assets/2.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 120%;
     .container {
       display: flex;
       align-items: center;
