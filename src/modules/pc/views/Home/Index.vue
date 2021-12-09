@@ -2,6 +2,7 @@
 <template>
   <div class="index">
     <div class="banner">
+      <video loop="" muted="" autoplay="" src="@/modules/pc/assets/images/banner.mp4"></video>
       <div class="item">
         <div class="container">
           <div class="info-body">
@@ -108,47 +109,49 @@
       </div>
     </div>
     <div class="session">
-      <div class="info-body container">
-        <div class="title">How Does it Work</div>
-        <p class="desc">“Appreciate to Earn” NFT vote mining and curatorial position bid</p>
-        <div
-          class="text"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          data-aos-offset="200"
-        >
-          <div class="row">
-            <span>- Vote mining:</span>
-            <span>Voting by staking UARTs for NFTs and earn rewards;</span>
+      <div class="container">
+        <div class="info-body">
+          <div class="title">How Does it Work</div>
+          <p class="desc">“Appreciate to Earn” NFT vote mining and curatorial position bid</p>
+          <div
+            class="text"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-offset="200"
+          >
+            <div class="row">
+              <span>- Vote mining:</span>
+              <span>Voting by staking UARTs for NFTs and earn rewards;</span>
+            </div>
+            <div class="row">
+              <span>- NFTs with FTs:</span>
+              <span>Extra UARTs mint into NFTs with votes received, retrievable by the owner;</span>
+            </div>
+            <div class="row">
+              <span>- Curatorial Position:</span>
+              <span>Stake UART to list your NFTs to be voted;</span>
+            </div>
           </div>
-          <div class="row">
-            <span>- NFTs with FTs:</span>
-            <span>Extra UARTs mint into NFTs with votes received, retrievable by the owner;</span>
-          </div>
-          <div class="row">
-            <span>- Curatorial Position:</span>
-            <span>Stake UART to list your NFTs to be voted;</span>
-          </div>
-        </div>
-        <div
-          class="hide-text"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          data-aos-offset="200"
-        >
-          <div class="row">
-            <span>UniArts' community token UINK：</span>
-          </div>
-          <div class="row">
-            <span>- Rewarded via participate in community activities</span>
-          </div>
-          <div class="row">
-            <span>- Play NFT card game to earn</span>
-          </div>
-          <div class="row">
-            <span>- Purchase rare Exclusive NFTs</span>
+          <div
+            class="hide-text"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-offset="200"
+          >
+            <div class="row">
+              <span>UniArts' community token UINK：</span>
+            </div>
+            <div class="row">
+              <span>- Rewarded via participate in community activities</span>
+            </div>
+            <div class="row">
+              <span>- Play NFT card game to earn</span>
+            </div>
+            <div class="row">
+              <span>- Purchase rare Exclusive NFTs</span>
+            </div>
           </div>
         </div>
       </div>
@@ -212,14 +215,18 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .banner {
+  position: relative;
+  > video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .item {
     background-color: black;
     width: 100%;
     height: 491px;
-    background-image: url("https://bitflix.oss-cn-hongkong.aliyuncs.com/assets/1.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

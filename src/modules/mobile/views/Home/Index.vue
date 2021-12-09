@@ -2,6 +2,7 @@
 <template>
   <div class="index">
     <div class="banner">
+      <video loop="" muted="" autoplay="" src="@/modules/pc/assets/images/banner.mp4"></video>
       <div class="item">
         <div class="container">
           <div class="info-body">
@@ -221,6 +222,15 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .banner {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  > video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .item {
     background-color: black;
     width: 100%;
