@@ -49,8 +49,8 @@ export default defineComponent({
     margin-top: 30px;
     color: white;
     font-family: "ArialMT";
-    font-size: 14px;
-    line-height: 35px;
+    font-size: 13px;
+    line-height: 22px;
   }
 }
 .game-pic {

@@ -3,98 +3,61 @@
   <div class="index">
     <div class="banner">
       <div class="item">
-        <div class="info-body container">
-          <div>UniArts'ART-Fi</div>
-          <br />
-          <div>Fine Arts with Social, Game and Benefit</div>
-        </div>
-      </div>
-    </div>
-    <div class="session">
-      <video
-        loop=""
-        muted=""
-        autoplay=""
-        src="https://assets-jl.oss-cn-beijing.aliyuncs.com/videos/60e3c524c8e1b.mp4"
-      ></video>
-      <div class="info-body container">
-        <div class="title">What Is UniArts</div>
-        <p class="desc">
-          UniArts is a decentralized value discovery system for artists and art collectors
-        </p>
-        <p class="text">
-          UniArts is a multi-chain bottom-up value discovery system with a substrate-developed
-          mainnet and EVM (Ethereum virtual machine)-based smart contracts for infrastructure.
-        </p>
-        <!-- <span @click="onShowClickText">More</span> -->
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          data-aos-offset="50"
-          class="hide-text"
-        >
-          <div class="row">
-            <span>- Exhibition:</span>
-            <span>List NFTs to let the community to vote with UART and earn rewards;</span>
-          </div>
-          <div class="row">
-            <span>- Value discovery:</span>
-            <span
-              >UARTs mint into NFTs with votes received as value indicator, also retrievable by the
-              owner;</span
-            >
-          </div>
-          <div class="row">
-            <span>- IXO:</span>
-            <span>NFT Auction after vote with liquidity enhance;</span>
-          </div>
-          <div class="row">
-            <span></span>
-            <span
-              >NFT projects or other collector community may do IXO for their in demand NFTs</span
-            >
-          </div>
-          <div class="row">
-            <span></span>
-            <span>NFT collectable Mysterious box backed by LPs </span>
+        <div class="container">
+          <div class="info-body">
+            <div style="font-size: 50px">UniArts'ART-Fi</div>
+            <br />
+            <div style="font-size: 43px; margin-top: 20px">
+              Fine Arts with Social, Game and Benefit
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="session">
-      <div class="info-body container">
-        <div class="title">Why UniArts</div>
-        <p class="desc">
-          To bond & connect artwork NFTs with the community instead of seller-buyer 2 point
-          interaction
-        </p>
-        <p class="text">UniArts’ ART-FI makes Fine Art the central of Social and Game</p>
-        <p class="text">
-          UniArts’ bottom-up value discovery system allow the community to share the value of great
-          artworks.
-        </p>
-        <div
-          class="hide-text"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          data-aos-offset="200"
-        >
-          <div class="row">
-            <span
-              >- NFT Gaming: NFT sold in the Galley can be used as cards in the game
-              "ART-VERSUS"</span
-            >
-          </div>
-          <div class="row">
-            <span>- Collect NFT souvenirs for every vote round</span>
-          </div>
-          <div class="row">
-            <span>- Good commons forwarded to community</span>
-          </div>
-          <div class="row">
-            <span>- NFT collector certificate </span>
+      <div class="container">
+        <div class="info-body" style="margin-top: 110px">
+          <div class="title">What Is UniArts</div>
+          <p class="desc">
+            UniArts is a decentralized value discovery system for artists and art collectors
+          </p>
+          <p class="text">
+            UniArts is a multi-chain bottom-up value discovery system with a substrate-developed
+            mainnet and EVM (Ethereum virtual machine)-based smart contracts for infrastructure.
+          </p>
+          <!-- <span @click="onShowClickText">More</span> -->
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-offset="50"
+            class="hide-text"
+          >
+            <div class="row">
+              <span>- Exhibition:</span>
+              <span>List NFTs to let the community to vote with UART and earn rewards;</span>
+            </div>
+            <div class="row">
+              <span>- Value discovery:</span>
+              <span
+                >UARTs mint into NFTs with votes received as value indicator, also retrievable by
+                the owner;</span
+              >
+            </div>
+            <div class="row">
+              <span>- IXO:</span>
+              <span>NFT Auction after vote with liquidity enhance;</span>
+            </div>
+            <div class="row">
+              <span></span>
+              <span
+                >NFT projects or other collector community may do IXO for their in demand NFTs</span
+              >
+            </div>
+            <div class="row">
+              <span></span>
+              <span>NFT collectable Mysterious box backed by LPs </span>
+            </div>
           </div>
         </div>
       </div>
@@ -104,8 +67,47 @@
         loop=""
         muted=""
         autoplay=""
-        src="https://assets-jl.oss-cn-beijing.aliyuncs.com/videos/1626923293407024.mp4"
+        src="https://bitflix.oss-cn-hongkong.aliyuncs.com/assets/535.m4v"
       ></video>
+      <div class="container">
+        <div class="info-body">
+          <div class="title">Why UniArts</div>
+          <p class="desc">
+            To bond & connect artwork NFTs with the community instead of seller-buyer 2 point
+            interaction
+          </p>
+          <p class="text">UniArts’ ART-FI makes Fine Art the central of Social and Game</p>
+          <p class="text">
+            UniArts’ bottom-up value discovery system allow the community to share the value of
+            great artworks.
+          </p>
+          <div
+            class="hide-text"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-offset="200"
+          >
+            <div class="row">
+              <span
+                >- NFT Gaming: NFT sold in the Galley can be used as cards in the game
+                "ART-VERSUS"</span
+              >
+            </div>
+            <div class="row">
+              <span>- Collect NFT souvenirs for every vote round</span>
+            </div>
+            <div class="row">
+              <span>- Good commons forwarded to community</span>
+            </div>
+            <div class="row">
+              <span>- NFT collector certificate </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="session">
       <div class="info-body container">
         <div class="title">How Does it Work</div>
         <p class="desc">“Appreciate to Earn” NFT vote mining and curatorial position bid</p>
@@ -214,7 +216,7 @@ export default defineComponent({
     background-color: black;
     width: 100%;
     height: 491px;
-    background-image: url(~@/modules/pc/assets/images/banner.jpeg);
+    background-image: url("https://bitflix.oss-cn-hongkong.aliyuncs.com/assets/1.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
@@ -222,6 +224,7 @@ export default defineComponent({
     flex-direction: column;
     justify-content: center;
     .info-body {
+      max-width: 850px;
       position: relative;
       z-index: 1;
       > div {
@@ -238,13 +241,15 @@ export default defineComponent({
   position: relative;
   overflow: hidden;
   background-color: black;
-  video {
+  > video,
+  > img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   .info-body {
+    max-width: 850px;
     position: relative;
     z-index: 1;
     margin-top: 130px;

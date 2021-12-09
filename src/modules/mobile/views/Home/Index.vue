@@ -3,20 +3,16 @@
   <div class="index">
     <div class="banner">
       <div class="item">
-        <div class="info-body container">
-          <div>UniArts'ART-Fi</div>
-          <br />
-          <div>Fine Arts with Social, Game and Benefit</div>
+        <div class="container">
+          <div class="info-body">
+            <div style="font-size: 27px">UniArts'ART-Fi</div>
+            <br />
+            <div>Fine Arts with Social, Game and Benefit</div>
+          </div>
         </div>
       </div>
     </div>
     <div class="session">
-      <video
-        loop=""
-        muted=""
-        autoplay=""
-        src="https://assets-jl.oss-cn-beijing.aliyuncs.com/videos/60e3c524c8e1b.mp4"
-      ></video>
       <div class="info-body container">
         <div class="title">What Is UniArts:</div>
         <p class="desc">
@@ -62,6 +58,12 @@
       </div>
     </div>
     <div class="session">
+      <video
+        loop=""
+        muted=""
+        autoplay=""
+        src="https://bitflix.oss-cn-hongkong.aliyuncs.com/assets/535.m4v"
+      ></video>
       <div class="info-body container">
         <div class="title">Why UniArts</div>
         <p class="desc">
@@ -99,12 +101,6 @@
       </div>
     </div>
     <div class="session">
-      <video
-        loop=""
-        muted=""
-        autoplay=""
-        src="https://assets-jl.oss-cn-beijing.aliyuncs.com/videos/1626923293407024.mp4"
-      ></video>
       <div class="info-body container">
         <div class="title">How Does it Work</div>
         <p class="desc">“Appreciate to Earn” NFT vote mining and curatorial position bidn</p>
@@ -229,11 +225,16 @@ export default defineComponent({
     background-color: black;
     width: 100%;
     height: 256px;
-    background-image: url(~@/modules/mobile/assets/images/banner.jpeg);
+    background-image: url("https://bitflix.oss-cn-hongkong.aliyuncs.com/assets/2.gif");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
-    > .info-body {
+    background-size: auto 120%;
+    .container {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    .info-body {
       position: relative;
       z-index: 1;
       height: 100%;
