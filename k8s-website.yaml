@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: frontend
+  name: frontend
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: registry.cn-hongkong.aliyuncs.com/uniarts/uni-arts-frontend:php
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "200m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: alireg
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: frontend
+  name: frontend
+spec:
+  ports:
+  - name: nginx
+    port: 80 
+    targetPort: 80
+  selector:
+    app: frontend
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-frontend
+spec:
+  tls:
+  - hosts:
+    - uniarts.network
+    secretName: uni-arts-network-tls
+  rules:
+  - host: uniarts.network
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: frontend
+          servicePort: 80
+
